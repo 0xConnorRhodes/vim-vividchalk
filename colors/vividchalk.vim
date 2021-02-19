@@ -113,8 +113,14 @@ highlight Search        guifg=NONE ctermfg=NONE gui=none cterm=none
 call s:hibg("Search"    ,"#555555","DarkBlue",81)
 highlight IncSearch     guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight MoreMsg       guifg=#00AA00 ctermfg=Green
-highlight LineNr        guifg=#DDEEFF ctermfg=White
-call s:hibg("LineNr"    ,"#222222","DarkBlue",80)
+
+" line numbers color
+" tk look to other themes for inspiration
+highlight LineNr        guifg=#a9a9a9 ctermfg=White
+
+"bg of line number
+call s:hibg("LineNr"    ,"#000000","DarkBlue",80) 
+
 highlight Question      none
 high link Question      MoreMsg
 highlight Title         guifg=Magenta ctermfg=Magenta
@@ -165,7 +171,8 @@ hi Identifier cterm=none
 call s:hifg("Comment"        ,"#9933CC","DarkMagenta",34) " 92
 " 26 instead?
 call s:hifg("Constant"       ,"#339999","DarkCyan",21) " 30
-call s:hifg("String"         ,"#66FF00","LightGreen",44,82) " 82
+call s:hifg("String"         ,"#73E726","LightGreen",44,82) " 82
+"call s:hifg("String"         ,"#66FF00","LightGreen",44,82) " 82
 call s:hifg("Identifier"     ,"#FFCC00","Yellow",72) " 220
 call s:hifg("Statement"      ,"#FF6600","Brown",68) " 202
 call s:hifg("PreProc"        ,"#AAFFFF","LightCyan",47) " 213
